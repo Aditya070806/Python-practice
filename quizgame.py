@@ -9,37 +9,37 @@ def main():
     score = 0
 
 #we will ask the user 5 questions
-    answer = input("Whats the full form of GPU? ")
-    if answer.lower() == "graphics processing unit":
+    answer = input("What's the full form of GPU? ")
+    if answer.lower().strip() == "graphics processing unit":
         score+=1
         print("Correct Answer")
     else:
         print("Incorrect Answer")
 
 
-    answer = input("Whats the full form of CPU? ")
-    if answer.lower() == "central processing unit":
+    answer = input("What's the full form of CPU? ")
+    if answer.lower().strip() == "central processing unit":
         score+=1
         print("Correct Answer")
     else:
         print("Incorrect Answer")
 
-    answer = input("Whats the full form of RAM? ")
-    if answer.lower()=="random access memory":
+    answer = input("What's the full form of RAM? ")
+    if answer.lower().strip() =="random access memory":
         score+=1
         print("Correct Answer")
     else:
         print("Incorrect Answer")
 
-    answer = input("Whats he full form of PSU? ")
-    if answer.lower()== "power supply":
+    answer = input("What's he full form of PSU? ")
+    if answer.lower().strip() == "power supply":
         score+=1
         print("Correct Answer")
     else:
         print("Incorrect Answer")
 
-    answer = input("Whats the full form of OS? ")
-    if answer.lower()== "operating system":
+    answer = input("What's the full form of OS? ")
+    if answer.lower().strip() == "operating system":
         score+=1
         print("Correct Answer")
     else:
@@ -48,5 +48,5 @@ def main():
     print("Quiz is Complete")
     print("Your final score is:"+ str(score))
     print("You got " + str(score) + " questions correct!")
-    print("You got " + str((score / 4) * 100) + "%.")
+    print("You got " + str((score / 5) * 100) + "%.")
 main()

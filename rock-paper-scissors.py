@@ -17,23 +17,27 @@ def main():
         comp_input = options[rand_pick]
         print(f"Computer picked:{comp_input}")
         if usr_input == "rock" and comp_input == "scissors":
-            print("User won the game")
+            print(f"Computer picked: {comp_input}\n You won")
             user_wins+=1
         elif usr_input == "paper" and comp_input == "rock":
-            print("User won the game")
+            print(f"Computer picked: {comp_input}\n You won")
             user_wins+=1
         elif usr_input =="scissors" and comp_input == "paper":
-            print("User won the game")
+            print(f"Computer picked: {comp_input}\n You won")
             user_wins+=1
         elif usr_input == comp_input:
             print("Draw")
             draw+=1
         else:
-            print("you lost")
+            print(f"Computer picked:{comp_input}\n Computer won")
             comp_wins+=1
-    print(f"You won the game{user_wins} times")
-    print(f"Computer won the game{comp_wins} times")
-    print(f"Game was Draw for {draw} times")
+    print("-" * 22)
+    print(f"You won: {user_wins}")
+    print(f"Computer won:{comp_wins}")
+    print(f"Game was Draw: {draw}")
+    print("-" * 22)
+
+
 main()
 
 

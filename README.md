@@ -7,10 +7,10 @@ Small Python programs and projects I've made while learning Python.
 
 ## Projects
 
-- Quiz Game
-- Number Guessing Game
-- Rock Paper Scissors
-- Dice Roll Game
+- Quiz Game — 5-question computer basics quiz
+- Number Guessing Game — Guess a random number within a chosen range
+- Rock Paper Scissors — Play repeated rounds against the computer
+- Dice Roll Game — Multiplayer dice game with scoring
 
 ## Learning
 

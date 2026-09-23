@@ -1,10 +1,10 @@
 import random
 
 def main():
-    def roll():
+    def roll_dice():
         min_val = 1
         max_val = 6
-        roll = random.randint(min_val, max_val)
+        roll= random.randint(min_val, max_val)
         return roll
 
     while True:
@@ -28,11 +28,11 @@ def main():
             current_score = 0
 
             while True:
-                rolling = input("If you want to roll enter 'y': ")
-                if rolling.lower() !="y":
+                rolling = input("Roll again y/n: ")
+                if rolling.lower().strip()!="y":
                     break
 
-                value = roll()
+                value = roll_dice()
                 if value == 1:
                     print("You rolled a 1, That's a turn done")
                     current_score = 0
@@ -40,7 +40,7 @@ def main():
                 else:
                     
                     current_score+=value
-                    print(f"You rolled a {value}, That's a turn done")
+                    print(f"You rolled a {value}")
 
                 print(f"Your total score is {current_score}")
 

@@ -19,7 +19,7 @@ def main():
     guess = 0
 
     while True:
-        guess+=1
+        guess += 1
         usr_input = input("Enter a guess: ")
         if usr_input.isdigit():
             usr_input = int(usr_input)
@@ -31,9 +31,9 @@ def main():
             print("Correct Guess")
             break
         elif usr_input < random_num:
-            print("Smaller Guess")
+            print("Too low! Try a higher number.")
         else:
-            print("Larger Guess")
+            print("Too high! Try a lower number.")
 
     print(f"You guessed in {guess} guesses ")
 
